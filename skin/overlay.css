@@ -1,2 +1,3 @@
 #readermx-toolbar-add { list-style-image: url("chrome://readermx/skin/icons/add-button-large.png"); }
+#readermx-toolbar-add.loading { list-style-image: url("chrome://readermx/skin/icons/add-button-loading.gif") !important; }
 toolbar[iconsize="small"] #readermx-toolbar-add { list-style-image: url("chrome://readermx/skin/icons/add-button-small.png"); }

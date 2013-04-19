@@ -4,6 +4,10 @@
 <!DOCTYPE overlay SYSTEM "chrome://readermx/locale/overlay.dtd">
 <overlay id="readermx-overlay"  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
+    <script type="application/x-javascript" src="chrome://readermx/content/libs/jquery.js" />
+    <script type="application/x-javascript" src="chrome://readermx/content/libs/parser.js" />
+    <script type="application/x-javascript" src="chrome://readermx/content/libs/readermx.js" />
+
     <stringbundleset id="stringbundleset">
         <stringbundle id="xulschoolhello-string-bundle" src="chrome://readermx/locale/overlay.properties" />
     </stringbundleset>
@@ -17,7 +21,5 @@
             class="toolbarbutton-1"
         />
     </toolbarpalette>
-
-    <script type="application/x-javascript" src="chrome://readermx/content/libs/readermx.js" />
 
 </overlay>
