@@ -9,13 +9,14 @@
     <em:description>添加您当前阅读的内容至ReaderMX</em:description>
     <em:version>0.1</em:version>
     <em:creator>Francis.TM</em:creator>
+    <em:iconURL>chrome://readermx/skin/icons/addon-icon.png</em:iconURL>
     <em:homepageURL>http://blog.francistm.com</em:homepageURL>
     <em:type>2</em:type>
 
     <!-- Mozilla Firefox -->
     <em:targetApplication>
       <Description>
-        <em:id>{1a485fe5-0495-4a18-adb1-01792dc78441}</em:id>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>4.0</em:minVersion>
         <em:maxVersion>20.*</em:maxVersion>
       </Description>

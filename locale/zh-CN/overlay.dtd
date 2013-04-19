@@ -1,0 +1,7 @@
+<!ENTITY readermx.addButton.label            "添加到ReaderMX">
+<!ENTITY readermx.addButton.title            "添加到ReaderMX">
+<!ENTITY readermx.addButton.tooltip          "添加到ReaderMX">
+
+<!ENTITY readermx.openButton.label           "打开ReaderMX阅读列表">
+<!ENTITY readermx.openButton.title           "打开ReaderMX阅读列表">
+<!ENTITY readermx.openButton.tooltip         "打开ReaderMX阅读列表">

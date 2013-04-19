@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://readermx/skin/css/overlay.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://readermx/locale/overlay.dtd">
+<overlay id="readermx-overlay"  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <stringbundleset id="stringbundleset">
+        <stringbundle id="xulschoolhello-string-bundle" src="chrome://readermx/locale/overlay.properties" />
+    </stringbundleset>
+
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton
+            id="readermx-toolbar-add"
+            label="&readermx.addButton.label;"
+            tooltiptext="&readermx.addButton.tooltip;"
+            oncommand="ReaderMX.Overlay.Add(event);"
+            class="toolbarbutton-1"
+        />
+    </toolbarpalette>
+
+    <script type="application/x-javascript" src="chrome://readermx/content/libs/readermx.js" />
+
+</overlay>

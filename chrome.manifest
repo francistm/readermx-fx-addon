@@ -1,5 +1,6 @@
 content   readermx                content/
 skin      readermx  classic/1.0   skin/
-locale    readermx  en-US         locale/zh-CN/
+locale    readermx  zh-CN         locale/zh-CN/
 
-overlay chrome://browser/content/browser.xul  chrome://readermx/content/browserOverlay.xul
+overlay chrome://browser/content/browser.xul  chrome://readermx/content/overlay.xul
+style   chrome://global/content/customizeToolbar.xul  chrome://readermx/skin/overlay.css
