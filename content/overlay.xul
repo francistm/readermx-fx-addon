@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="chrome://readermx/skin/css/overlay.css" type="text/css"?>
+<?xml-stylesheet href="chrome://readermx/skin/overlay.css" type="text/css"?>
 
 <!DOCTYPE overlay SYSTEM "chrome://readermx/locale/overlay.dtd">
 <overlay id="readermx-overlay"  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
