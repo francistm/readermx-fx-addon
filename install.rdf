@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>readermx@francistm.com</em:id>
+    <em:name>ReaderMX</em:name>
+    <em:description>添加您当前阅读的内容至ReaderMX</em:description>
+    <em:version>0.1</em:version>
+    <em:creator>Francis.TM</em:creator>
+    <em:homepageURL>http://blog.francistm.com</em:homepageURL>
+    <em:type>2</em:type>
+
+    <!-- Mozilla Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{1a485fe5-0495-4a18-adb1-01792dc78441}</em:id>
+        <em:minVersion>4.0</em:minVersion>
+        <em:maxVersion>20.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
