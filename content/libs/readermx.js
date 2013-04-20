@@ -49,5 +49,5 @@ ReaderMX.Overlay = {
 window.addEventListener("load", function(e) {
     Components.classes["@mozilla.org/moz/jssubscript-loader;1"].
     getService(Components.interfaces.mozIJSSubScriptLoader).
-    loadSubScript("chrome://myextension/content/libs/jquery.js");
+    loadSubScript("chrome://readermx/content/libs/jquery.js");
 }, false);
