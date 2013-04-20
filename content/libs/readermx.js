@@ -10,7 +10,9 @@ ReaderMX.Overlay = {
             "document" : content.document,
         };
 
-        let parsedPost = ReaderMX.Lib.AddPost(post);
+        let parsedPost = ReaderMX.Lib.addPost(post);
+
+        parsedPost._url = content.location.href;
 
         $.ajax("https://reader.mx/accounts/isLogged", {
             "type" : "GET",
@@ -22,24 +24,19 @@ ReaderMX.Overlay = {
                     content.location.href = "https://reader.mx/accounts/login?next=" + content.location.href;
 
                 }else {
-                    alert(parsedPost._title);
-                    alert(parsedPost._content);
-                    alert(parsedPost._base_url);
-                    /*
                     $.ajax("https://reader.mx/collect/insertData", {
                         "type" : "POST",
                         "cache" : false,
                         "data" : {
-                            "url" : content.location.href,
+                            "url" : parsedPost._url,
                             "title" : parsedPost._title,
-                            "content" : parsedPost._content,
+                            "content" : parsedPost._html,
                             "base_url" : parsedPost._base_url,
                         },
                         "success" : function(res) {
                             $(e.target).removeClass("loading");
                         }
                     });
-                    */
                 }
             }
         });
