@@ -15,18 +15,24 @@ ReaderMX.Overlay = {
         parsedPost._url = content.location.href;
 
         $.ajax("https://reader.mx/accounts/isLogged", {
-            "type" : "GET",
-            "cache" : false,
-            "dataType" : "JSON",
+            "dataType" : "jsonp",
+            "jsonp" : "jsoncallback",
+            "beforeSend" : function() {
+                $(e.target).addClass("loading");
+            },
+            "error" : function(xhr, stat, error) {
+                alert("添加到ReaderMX失败");
+                $(e.target).removeClass("loading");
+            },
             "success" : function(res) {
-
                 if("false" == res.logged) {
                     content.location.href = "https://reader.mx/accounts/login?next=" + content.location.href;
 
                 }else {
                     $.ajax("https://reader.mx/collect/insertData", {
                         "type" : "POST",
-                        "cache" : false,
+                        "dataType" : "jsonp",
+                        "jsonp" : "jsoncallback",
                         "data" : {
                             "url" : parsedPost._url,
                             "title" : parsedPost._title,
@@ -41,7 +47,6 @@ ReaderMX.Overlay = {
             }
         });
 
-        $(e.target).addClass("loading");
     }
 
 }
